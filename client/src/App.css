@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.brand-logo {
+  font-family: 'Abhaya Libre', serif !important;
+}
+
+
+.text-wizard-purple {
+  color: #8c52ff !important;
+}
+a {
+  color: #8c52ff !important;
+}
+.wizard-purple {
+  background-color: #8c52ff !important;
+  color: white !important;
+}
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.link-button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.link-button:hover, .link-button:focus {
+  text-decoration: underline;
+}
+.main, .about, .contact {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/home_page/show.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.main .center hr, .about .center hr, .contact .center hr {
+  width: 100%;
+  margin: auto;
+}
+.home .display-area2 {
+  height: 60vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home hr {
+  width: 80vw;
+  margin: auto;
+}
+
+
+.home .health_plan {
+  text-align: center;
+}
+.home .home_start_area {
+  text-align: center;
+}
+.home .top {
+  width: 100%;
+  margin-top: 5vh;
+  padding: 5vw 5vh;
+}
+.home .top hr {
+  width: 30vw;
+}
+.home .top .title-hr {
+  width: 80vw;
+}
+.about_section {
+  margin-top: 15vh !important;
+  margin-bottom: 15vh !important;
+  font-size: 1.25rem;
+}
+.contact_section {
+  margin: 15vh auto !important;
+  font-size: 1.2rem;
+  width: 100vw;
+}
+
+.collection .collection-item .title{
+ text-align: left;
+}
+
+@media (max-width: 800px) {
+  .main, .about, .contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+ }
+}
+
+
+
+.marketing{
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/home_page/show.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.pink_background {
+  background: url('./assets/samples/background.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.process-img {
+  width: 70vw;
+}
+
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.item {
+  position: relative;
+  background: #8C52FF;
+  border: 1px solid #f8f8f8;
+  width: 85%;
+  margin: auto;
+  margin-top: 4vh;
+  overflow: hidden; }
+  .item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: inherit;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1); }
+  .item:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg); }
+  .item:hover .item-image {
+    transform: scale(1.2); }
+  .item:hover .item-text {
+    opacity: 1;
+    transform: translateY(0); }
+  .item-image {
+    height: auto;
+    transform: translateZ(0);
+    display: block;
+    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
+  .item-image:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+    overflow: hidden; }
+  .item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 0; }
+  .item-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    transform: translateY(-20%);
+    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+    transition-delay: 300ms; }
+  .item-text-wrap {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%); }
+  .item-text-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0 0 0; }
+  .item-text-category {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin: 0; }
+
+
+.item1{
+  text-align: left;
+  margin: auto;
+  padding: 2em;
+}
+
+.item1 a:hover{
+  background: #9E9E9E;
+}
+
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .process-img {
+      width: 100vw;
+    }
+    
+}
+
+
+.landing {
+  overflow-x: hidden;
+}
+
+.landingMain {
+  width: 100vw;
+  background-image: url('./assets/landing/swirl.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: opacity(0.2);
+  -webkit-backdrop-filter: opacity(0.2);
+}
+
+.limg {
+  border-radius: 7%;
+  filter: brightness(75%);
+}
+
+.limg2 {
+  border-radius: 7%;
+}

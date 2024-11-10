@@ -1,0 +1,10 @@
+
+.logs {
+    .select-dropdown.dropdown-trigger{
+        color: white;
+        text-align: center;
+        font-family: 'Abhaya Libre', serif;
+        text-transform: uppercase;
+        font-size: 14px !important;
+    }
+}
